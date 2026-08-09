@@ -1,0 +1,18 @@
+# Mac OS
+.DS_Store
+
+# Data files
+data/
+telco_dbt/seeds/telco_churn.csv
+
+# DuckDB local database
+*.duckdb
+
+# dbt artifacts
+telco_dbt/target/
+telco_dbt/logs/
+telco_dbt/dbt_packages/
+
+# Python
+__pycache__/
+*.pyc
