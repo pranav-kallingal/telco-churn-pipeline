@@ -1,0 +1,53 @@
+[0m01:21:42.679831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d084310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e106850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e106a30>]}
+
+
+============================== 01:21:42.683010 | 3d8a78b1-8e0c-447c-a9ef-f622b77259f2 ==============================
+[0m01:21:42.683010 [info ] [MainThread]: Running with dbt=1.10.22
+[0m01:21:42.683368 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'no_print': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'version_check': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt init telco-dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/apple/.dbt', 'quiet': 'False', 'target_path': 'None', 'partial_parse': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'empty': 'None'}
+[0m01:22:05.666574 [info ] [MainThread]: A project called telco_dbt already exists here.
+[0m01:22:05.673705 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 23.049522, "process_in_blocks": "0", "process_kernel_time": 0.204227, "process_mem_max_rss": "121667584", "process_out_blocks": "0", "process_user_time": 1.771688}
+[0m01:22:05.674364 [debug] [MainThread]: Command `dbt init` succeeded at 01:22:05.674255 after 23.05 seconds
+[0m01:22:05.674738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d084310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e071a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0acd90>]}
+[0m01:22:05.675096 [debug] [MainThread]: Flushing usage events
+[0m01:22:06.915224 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:22:35.062757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd72880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10edfa940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10edfa760>]}
+
+
+============================== 01:22:35.065951 | b3d5470c-1fed-49c9-8f34-a9dec1648c57 ==============================
+[0m01:22:35.065951 [info ] [MainThread]: Running with dbt=1.10.22
+[0m01:22:35.066326 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'log_path': 'logs', 'log_cache_events': 'False', 'empty': 'None', 'debug': 'False', 'use_colors': 'True', 'write_json': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt init telco_dbt', 'static_parser': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'no_print': 'None', 'version_check': 'True', 'introspect': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'profiles_dir': '/Users/apple/.dbt', 'indirect_selection': 'eager'}
+[0m01:22:35.074777 [info ] [MainThread]: A project called telco_dbt already exists here.
+[0m01:22:35.076571 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.06291763, "process_in_blocks": "0", "process_kernel_time": 0.153316, "process_mem_max_rss": "122142720", "process_out_blocks": "0", "process_user_time": 1.771898}
+[0m01:22:35.076856 [debug] [MainThread]: Command `dbt init` succeeded at 01:22:35.076799 after 0.06 seconds
+[0m01:22:35.077091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd72880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed94fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eddb7f0>]}
+[0m01:22:35.077323 [debug] [MainThread]: Flushing usage events
+[0m01:22:36.077850 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:22:48.530222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098f83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a97a8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a97aa90>]}
+
+
+============================== 01:22:48.533837 | db4d3f92-76b9-4065-a4d4-dbf326b9c6b0 ==============================
+[0m01:22:48.533837 [info ] [MainThread]: Running with dbt=1.10.22
+[0m01:22:48.534721 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_path': 'logs', 'printer_width': '80', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'fail_fast': 'False', 'empty': 'None', 'warn_error': 'None', 'debug': 'False', 'introspect': 'True', 'use_colors': 'True', 'log_format': 'default', 'static_parser': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/apple/.dbt', 'cache_selected_only': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'version_check': 'True', 'invocation_command': 'dbt init telco_dbt', 'partial_parse': 'True'}
+[0m01:22:48.551372 [debug] [MainThread]: Starter project path: /Users/apple/Library/Python/3.9/lib/python/site-packages/dbt/include/starter_project
+[0m01:22:48.558714 [info ] [MainThread]: 
+Your new dbt project "telco_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:22:48.559060 [info ] [MainThread]: Setting up your profile.
+[0m01:23:10.875569 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 22.404816, "process_in_blocks": "0", "process_kernel_time": 0.182962, "process_mem_max_rss": "138412032", "process_out_blocks": "0", "process_user_time": 1.796659}
+[0m01:23:10.876165 [debug] [MainThread]: Command `dbt init` succeeded at 01:23:10.876051 after 22.41 seconds
+[0m01:23:10.876454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098f83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a95e640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a95eaf0>]}
+[0m01:23:10.876762 [debug] [MainThread]: Flushing usage events
+[0m01:23:11.939419 [debug] [MainThread]: An error was encountered while trying to flush usage events

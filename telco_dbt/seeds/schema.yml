@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: telco_churn
+    config:
+      column_types:
+        TotalCharges: varchar
+        MonthlyCharges: varchar
+        SeniorCitizen: varchar
