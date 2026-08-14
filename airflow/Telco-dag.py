@@ -3,7 +3,6 @@ import datetime
 from airflow.providers.standard.operators.bash import BashOperator
 
 
-
 with DAG(
     dag_id="Telco-pipeline",
     start_date=datetime.datetime(2020, 1, 1),
