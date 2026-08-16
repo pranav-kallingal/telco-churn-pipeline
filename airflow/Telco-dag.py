@@ -12,21 +12,21 @@ with DAG(
 
     extractVal_task = BashOperator(
         task_id="load-data-validate",
-        bash_command="python3 /Users/apple/Desktop/project-main/pyspark/validate_csv.py"
+        bash_command="python3 /opt/airflow/project/pyspark/validate_csv.py"
     )
 
     convert_parquet = BashOperator(
         task_id="convert-parquet",
-        bash_command="python3 /Users/apple/Desktop/project-main/pyspark/csv_to_parquet.py"
+        bash_command="python3 /opt/airflow/project/pyspark/csv_to_parquet.py"
     )
 
     json_contract = BashOperator(
         task_id="json-contract",
-        bash_command="python3 /Users/apple/Desktop/project-main/pyspark/create_json_contract.py"
+        bash_command="python3 /opt/airflow/project/pyspark/create_json_contract.py"
     )
     dbt_run = BashOperator(
         task_id="dbt-run",
-        bash_command="cd /Users/apple/Desktop/project-main/telco_dbt && dbt run --exclude example"
+        bash_command="cd /opt/airflow/project/telco_dbt && dbt run --exclude example"
     )
 
     extractVal_task >> convert_parquet >> json_contract >> dbt_run

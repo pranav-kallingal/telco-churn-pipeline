@@ -4,7 +4,8 @@ from pyspark.sql.functions import col
 
 
 spark = SparkSession.builder.appName("Telco").getOrCreate()
-path_file = "/Users/apple/Desktop/project-main/data/raw/Telco-Customer-Churn.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+path_file = os.path.join(BASE_DIR, "data", "raw", "Telco-Customer-Churn.csv")
 df = spark.read.option("header", True).option("inferSchema", True).csv(path_file)
 expected_cols = ['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 
                  'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
