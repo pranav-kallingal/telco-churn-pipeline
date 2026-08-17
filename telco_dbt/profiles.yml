@@ -1,0 +1,6 @@
+telco_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/opt/airflow/project/telco_dbt/telco.duckdb'

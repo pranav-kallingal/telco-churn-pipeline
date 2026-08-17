@@ -26,7 +26,7 @@ with DAG(
     )
     dbt_run = BashOperator(
         task_id="dbt-run",
-        bash_command="cd /opt/airflow/project/telco_dbt && dbt run --exclude example"
+        bash_command="cd /opt/airflow/project/telco_dbt && dbt run --profiles-dir . --exclude example"
     )
 
     extractVal_task >> convert_parquet >> json_contract >> dbt_run
