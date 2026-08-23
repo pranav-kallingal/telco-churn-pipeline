@@ -28,5 +28,13 @@ with DAG(
         task_id="dbt-run",
         bash_command="cd /opt/airflow/project/telco_dbt && dbt run --profiles-dir . --exclude example"
     )
+    upload_s3 = BashOperator(
+        task_id="upload-s3",
+        bash_command="python3 /opt/airflow/project/pyspark/upload_to_s3.py"
+    )
+    load_redshift = BashOperator(
+        task_id="load-redshift",
+        bash_command="python3 /opt/airflow/project/pyspark/load_to_redshift.py"
+    )
 
-    extractVal_task >> convert_parquet >> json_contract >> dbt_run
+    extractVal_task >> convert_parquet >> json_contract >> dbt_run >> upload_s3 >> load_redshift
