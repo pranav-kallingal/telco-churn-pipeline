@@ -1,5 +1,5 @@
 WITH source AS (
-    SELECT * FROM {{ ref('telco_churn') }}
+    SELECT * FROM {{ source('public', 'raw_customers') }}
 ),
 
 cleaned AS (
@@ -17,10 +17,10 @@ cleaned AS (
         Contract                                            AS contract_type,
         PaperlessBilling                                    AS paperless_billing,
         PaymentMethod                                       AS payment_method,
-        CAST(MonthlyCharges AS DOUBLE)                      AS monthly_charges,
+        CAST(MonthlyCharges AS FLOAT)                      AS monthly_charges,
         CASE 
             WHEN TRIM(TotalCharges) = '' THEN NULL
-            ELSE CAST(TRIM(TotalCharges) AS DOUBLE)
+            ELSE CAST(TRIM(TotalCharges) AS FLOAT)
         END                                                 AS total_charges,
         CASE WHEN Churn = 'Yes' THEN 1 ELSE 0 END          AS churned
     FROM source

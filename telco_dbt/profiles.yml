@@ -2,5 +2,11 @@ telco_dbt:
   target: dev
   outputs:
     dev:
-      type: duckdb
-      path: '/opt/airflow/project/telco_dbt/telco.duckdb'
+      type: redshift
+      host: telco-workgroup.682919447512.ap-south-1.redshift-serverless.amazonaws.com
+      user: admin                    
+      password: "REDSHIFT_PASSWORD" 
+      port: 5439
+      dbname: dev
+      schema: public
+      threads: 4
